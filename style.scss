@@ -1,5 +1,75 @@
+@import "variables";
+@import "media-queries";
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+}
+body{
+    background-color: $pp-Cream;
+}
+.box-body{
+    width:100vw;
+    height:95vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-box{
+    width:38vw;
+    height:60vh;
+    display: flex;
+    // flex-wrap: wrap;
+    border-radius: $border-radius;
+    
+
+
+    img{
+        border-bottom-left-radius: $border-radius;
+        border-top-left-radius: $border-radius;
+    }
+    .description{
+        padding:2rem;
+        background-color: $White;
+            h4{
+                letter-spacing: .5rem;
+                text-transform: uppercase;
+                color:$Dark-grayish-blue;
+                font-size: small;
+
+
+            }
+            .title-head{
+                margin:1rem 0;
+                color:$Very-dark-blue;
+                line-height: 1.8rem;
+            }
+
+            .content-text{
+                font-size: 14px;
+                color:$Dark-grayish-blue;
+                margin-bottom: 1rem;
+            }
+            .price{
+                color:$pp-Dark-cyan;
+                display: inline;
+            }
+            .cut-price{
+                text-decoration-line: line-through;
+                font-size: 10px;
+                line-height: -1rem;
+            }
+            button{
+                padding: .5rem 3rem;
+                border: none;
+                background-color: $pp-Dark-cyan;
+                color:$White;
+                border-radius: 5px;
+                font-size: 10px;
+                font-weight: bold;
+                margin-top: 1.5rem;
+            }
+
+    }
 }

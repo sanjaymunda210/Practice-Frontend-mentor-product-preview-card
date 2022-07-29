@@ -2,4 +2,67 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+body {
+  background-color: hsl(30deg, 38%, 92%);
+}
+
+.box-body {
+  width: 100vw;
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-box {
+  width: 38vw;
+  height: 60vh;
+  display: flex;
+  border-radius: 0.8rem;
+}
+.product-box img {
+  border-bottom-left-radius: 0.8rem;
+  border-top-left-radius: 0.8rem;
+}
+.product-box .description {
+  padding: 2rem;
+  background-color: hsl(0deg, 0%, 100%);
+}
+.product-box .description h4 {
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  color: hsl(228deg, 12%, 48%);
+  font-size: small;
+}
+.product-box .description .title-head {
+  margin: 1rem 0;
+  color: hsl(212deg, 21%, 14%);
+  line-height: 1.8rem;
+}
+.product-box .description .content-text {
+  font-size: 14px;
+  color: hsl(228deg, 12%, 48%);
+  margin-bottom: 1rem;
+}
+.product-box .description .price {
+  color: hsl(158deg, 36%, 37%);
+  display: inline;
+}
+.product-box .description .cut-price {
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+  font-size: 10px;
+  line-height: -1rem;
+}
+.product-box .description button {
+  padding: 0.5rem 3rem;
+  border: none;
+  background-color: hsl(158deg, 36%, 37%);
+  color: hsl(0deg, 0%, 100%);
+  border-radius: 5px;
+  font-size: 10px;
+  font-weight: bold;
+  margin-top: 1.5rem;
 }/*# sourceMappingURL=style.css.map */
