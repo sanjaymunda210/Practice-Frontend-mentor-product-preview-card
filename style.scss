@@ -17,7 +17,7 @@ body{
     align-items: center;
 }
 .product-box{
-    width:38vw;
+    width:40vw;
     height:60vh;
     display: flex;
     // flex-wrap: wrap;
@@ -30,45 +30,58 @@ body{
         border-top-left-radius: $border-radius;
     }
     .description{
-        padding:2rem;
+        padding: 1.5rem;
         background-color: $White;
-            h4{
-                letter-spacing: .5rem;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;    
+            h6{
+                letter-spacing: .3rem;
                 text-transform: uppercase;
                 color:$Dark-grayish-blue;
-                font-size: small;
+                
+
 
 
             }
             .title-head{
-                margin:1rem 0;
+                
                 color:$Very-dark-blue;
                 line-height: 1.8rem;
             }
 
             .content-text{
-                font-size: 14px;
+                font-size: .8rem;
                 color:$Dark-grayish-blue;
-                margin-bottom: 1rem;
+                
+               
             }
             .price{
                 color:$pp-Dark-cyan;
                 display: inline;
+                
             }
             .cut-price{
                 text-decoration-line: line-through;
-                font-size: 10px;
-                line-height: -1rem;
+                font-size: 12px;
+                color:$Dark-grayish-blue;
             }
             button{
-                padding: .5rem 3rem;
+                padding: .5rem 1.5rem;
                 border: none;
                 background-color: $pp-Dark-cyan;
                 color:$White;
                 border-radius: 5px;
-                font-size: 10px;
+                font-size: 12px;
                 font-weight: bold;
-                margin-top: 1.5rem;
+                
+
+                img{
+                    height:1.2em;
+                }
+            }
+            button:hover{
+                background-color: $clr-btn-hover;
             }
 
     }
