@@ -17,7 +17,7 @@ body {
 }
 
 .product-box {
-  width: 38vw;
+  width: 40vw;
   height: 60vh;
   display: flex;
   border-radius: 0.8rem;
@@ -27,24 +27,24 @@ body {
   border-top-left-radius: 0.8rem;
 }
 .product-box .description {
-  padding: 2rem;
+  padding: 1.5rem;
   background-color: hsl(0deg, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
-.product-box .description h4 {
-  letter-spacing: 0.5rem;
+.product-box .description h6 {
+  letter-spacing: 0.3rem;
   text-transform: uppercase;
   color: hsl(228deg, 12%, 48%);
-  font-size: small;
 }
 .product-box .description .title-head {
-  margin: 1rem 0;
   color: hsl(212deg, 21%, 14%);
   line-height: 1.8rem;
 }
 .product-box .description .content-text {
-  font-size: 14px;
+  font-size: 0.8rem;
   color: hsl(228deg, 12%, 48%);
-  margin-bottom: 1rem;
 }
 .product-box .description .price {
   color: hsl(158deg, 36%, 37%);
@@ -53,16 +53,21 @@ body {
 .product-box .description .cut-price {
   -webkit-text-decoration-line: line-through;
           text-decoration-line: line-through;
-  font-size: 10px;
-  line-height: -1rem;
+  font-size: 12px;
+  color: hsl(228deg, 12%, 48%);
 }
 .product-box .description button {
-  padding: 0.5rem 3rem;
+  padding: 0.5rem 1.5rem;
   border: none;
   background-color: hsl(158deg, 36%, 37%);
   color: hsl(0deg, 0%, 100%);
   border-radius: 5px;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: bold;
-  margin-top: 1.5rem;
+}
+.product-box .description button img {
+  height: 1.2em;
+}
+.product-box .description button:hover {
+  background-color: #194031;
 }/*# sourceMappingURL=style.css.map */
