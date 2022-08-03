@@ -17,7 +17,7 @@ body{
     align-items: center;
 }
 .product-box{
-    width:40vw;
+    // width:40vw;
     height:60vh;
     display: flex;
     // flex-wrap: wrap;
@@ -48,12 +48,13 @@ body{
                 
                 color:$Very-dark-blue;
                 line-height: 1.8rem;
+                max-width: 12ch;
             }
 
             .content-text{
                 font-size: .8rem;
                 color:$Dark-grayish-blue;
-                
+                max-width:30ch;
                
             }
             .price{
