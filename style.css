@@ -17,6 +17,7 @@ body {
 }
 
 .product-box {
+//  width: 40vw;
   height: 60vh;
   display: flex;
   border-radius: 0.8rem;
@@ -46,6 +47,7 @@ body {
   font-size: 0.8rem;
   color: hsl(228deg, 12%, 48%);
   max-width: 30ch;
+
 }
 .product-box .description .price {
   color: hsl(158deg, 36%, 37%);
