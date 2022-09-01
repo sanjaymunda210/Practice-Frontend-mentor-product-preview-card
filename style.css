@@ -18,7 +18,6 @@ body {
 @media (max-width: 450px) {
   .box-body {
     align-items: flex-start;
-    padding: 2rem;
   }
 }
 
@@ -31,6 +30,8 @@ body {
   .product-box {
     flex-wrap: wrap;
     width: 90vw;
+    height: 90vh;
+    margin-top: 1.5rem;
   }
 }
 .product-box .product-img-desk {
