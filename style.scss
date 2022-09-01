@@ -19,7 +19,7 @@ body{
     @include mobile{
         
         align-items: flex-start;
-        padding: 2rem;
+        // padding: 2rem;
         
     }
 
@@ -33,6 +33,8 @@ body{
     @include mobile{
     flex-wrap: wrap;    
     width:90vw;
+    height:90vh;
+    margin-top: 1.5rem;
     }
 
     .product-img-desk{
