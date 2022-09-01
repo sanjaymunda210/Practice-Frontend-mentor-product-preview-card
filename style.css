@@ -10,21 +10,49 @@ body {
 
 .box-body {
   width: 100vw;
-  height: 95vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 450px) {
+  .box-body {
+    align-items: flex-start;
+    padding: 2rem;
+  }
+}
 
 .product-box {
-//  width: 40vw;
   height: 60vh;
   display: flex;
   border-radius: 0.8rem;
 }
-.product-box img {
+@media (max-width: 450px) {
+  .product-box {
+    flex-wrap: wrap;
+    width: 90vw;
+  }
+}
+.product-box .product-img-desk {
+  display: block;
   border-bottom-left-radius: 0.8rem;
   border-top-left-radius: 0.8rem;
+}
+@media (max-width: 450px) {
+  .product-box .product-img-desk {
+    display: none;
+  }
+}
+.product-box .product-img-mob {
+  display: none;
+}
+@media (max-width: 450px) {
+  .product-box .product-img-mob {
+    display: block;
+    width: 100%;
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+  }
 }
 .product-box .description {
   padding: 1.5rem;
@@ -32,6 +60,14 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+@media (max-width: 450px) {
+  .product-box .description {
+    width: 100vw;
+    gap: 0.5rem;
+    border-bottom-left-radius: 0.8rem;
+    border-bottom-right-radius: 0.8rem;
+  }
 }
 .product-box .description h6 {
   letter-spacing: 0.3rem;
@@ -43,11 +79,20 @@ body {
   line-height: 1.8rem;
   max-width: 12ch;
 }
+@media (max-width: 450px) {
+  .product-box .description .title-head {
+    max-width: 20ch;
+  }
+}
 .product-box .description .content-text {
   font-size: 0.8rem;
   color: hsl(228deg, 12%, 48%);
   max-width: 30ch;
-
+}
+@media (max-width: 450px) {
+  .product-box .description .content-text {
+    max-width: 45ch;
+  }
 }
 .product-box .description .price {
   color: hsl(158deg, 36%, 37%);

@@ -11,30 +11,64 @@ body{
 }
 .box-body{
     width:100vw;
-    height:95vh;
+    height:100vh;
     display:flex;
     justify-content: center;
     align-items: center;
+    
+    @include mobile{
+        
+        align-items: flex-start;
+        padding: 2rem;
+        
+    }
+
 }
 .product-box{
-    // width:40vw;
+    
     height:60vh;
     display: flex;
-    // flex-wrap: wrap;
     border-radius: $border-radius;
     
+    @include mobile{
+    flex-wrap: wrap;    
+    width:90vw;
+    }
 
-
-    img{
+    .product-img-desk{
+        display:block;
         border-bottom-left-radius: $border-radius;
         border-top-left-radius: $border-radius;
+        @include mobile{
+            display:none;
+        }
     }
+    .product-img-mob{
+        display:none;
+
+        @include mobile{
+            display:block;
+            width:100%;
+            border-top-left-radius:$border-radius;
+            border-top-right-radius:$border-radius ;
+        }
+
+    }
+
+
     .description{
         padding: 1.5rem;
         background-color: $White;
         display:flex;
         flex-direction: column;
-        justify-content: space-around;    
+        justify-content: space-around;   
+    
+        @include mobile{
+            width:100vw;
+            gap: .5rem;
+            border-bottom-left-radius: $border-radius;
+            border-bottom-right-radius: $border-radius;
+        } 
             h6{
                 letter-spacing: .3rem;
                 text-transform: uppercase;
@@ -49,6 +83,10 @@ body{
                 color:$Very-dark-blue;
                 line-height: 1.8rem;
                 max-width: 12ch;
+
+                @include mobile{
+                    max-width: 20ch;
+                }
             }
 
             .content-text{
@@ -56,6 +94,9 @@ body{
                 color:$Dark-grayish-blue;
                 max-width:30ch;
 
+                @include mobile{
+                    max-width:45ch;
+                }
                
             }
             .price{
